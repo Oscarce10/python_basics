@@ -63,8 +63,22 @@ x = lista
 print(x)
 x.pop(3)
 print(x)
+# del also removes the specified index
+del x[2]
+print(x)
 print("--------------------------------------------------------")
 
+# clear() empties the list
+x = lista
+print(x)
+x.clear()
+print(x)
+print(lista)
+# Note: You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1,
+# and changes made in list1 will automatically also be made in list2.
+print("--------------------------------------------------------")
 
+# COPY A LIST
 
-
+# Make a copy of a list with the copy() method:
+lista = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
